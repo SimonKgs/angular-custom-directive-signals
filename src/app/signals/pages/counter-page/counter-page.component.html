@@ -1,0 +1,10 @@
+<p>Counter: {{ counter() }}</p>
+<hr>
+<p>Square Counter: {{ squareCounter() }}</p>
+<hr>
+
+<button (click)="increaseBy(+1)" class="btn btn-primary me-2"> + 1 </button>
+<button (click)="increaseBy(-1)" class="btn btn-primary me-2"> - 1 </button>
+<!-- set establece el valor de la señal -->
+<button (click)="counter.set(0)" class="btn btn-primary"> Reset </button>
+

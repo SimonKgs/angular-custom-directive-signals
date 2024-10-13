@@ -1,0 +1,13 @@
+<ul class="list-group">
+    <!-- using the signal  -->
+    <!-- I need to call it to get the values -->
+    <li 
+    *ngFor="let item of menuItems()" 
+    class="list-group-item"
+    [routerLink]="item.route"
+    routerLinkActive="active"
+    >
+        {{ item.title }}
+    </li>
+</ul>
+
